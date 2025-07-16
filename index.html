@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mediease | Editable Supplier Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <header class="header">
+      <h1>📦 Mediease Supplier Dashboard</h1>
+      <p>Manage and update your supply requests and stock items</p>
+    </header>
+
+    <!-- Editable Supply Requests -->
+    <div class="card">
+      <h2>🚚 Supply Requests</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="request-table">
+          <!-- JS will generate rows -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Editable Stock -->
+    <div class="card">
+      <h2>📦 Current Stock</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Available Units</th>
+          </tr>
+        </thead>
+        <tbody id="stock-table">
+          <!-- JS will generate rows -->
+        </tbody>
+      </table>
+    </div>
+
+    <footer class="footer">
+      &copy; 2025 Mediease Pvt. Ltd.
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
